@@ -1,0 +1,21 @@
+
+version: 2
+
+models:
+  - name: cust_info
+    description: "Customer Information"
+    columns:
+      - name: customerid
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: transaction_data
+    description: "transactions data"
+    columns:
+      - name: TransactionID
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
